@@ -1,0 +1,150 @@
+pt-BR:
+  dt_actions: Ações
+  languages:
+    selector:
+      pt-BR: Português
+      en: Inglês
+  buttons:
+    explore: Explorar
+    remove: Remover
+    edit: Editar
+    new_research: Nova pesquisa
+    cancel: Cancelar
+
+  helpers:
+    buttons:
+      save: Salvar
+      import: Importar
+      imported: Importado
+      remove: Remover
+      download: Baixar
+      delete_all_papers: Remover todos os artigos
+      annotations_reports: Relatórios de anotações
+    links:
+      back: Voltar
+      edit: Editar
+      destroy: Excluir
+      confirm: Você tem certeza?
+      planning: Planejamento
+      retrieve_papers: Recuperar artigos
+      annotate_papers: Fichar artigos
+      copy_trans_to_editor: Copiar tradução para o editor
+    tables:
+      actions: Ações
+
+  navbar:
+    search: Procurar
+    items:
+      home: Principal
+      my_researches: Minhas pesquisas
+    user:
+      my_profile: Meu perfil
+      preferences: Preferências
+      logout: Sair
+
+  breadcrumbs:
+    home: principal
+    researches: pesquisas
+    explore: explorar
+    retrieve_papers: recuperar artigos
+    annotate_papers: fichar artigos
+    annotations_reports: relatórios de anotações
+
+  modals:
+    close: Fechar
+    dataConfirmModal:
+      title: 'Confirmação'
+      confirm: 'Você tem certeza disso?'
+      cancel: 'Cancelar'
+      commit: 'Sim, tenho!'
+
+
+  researches:
+    index:
+      title: Minhas pesquisas
+    new:
+      title: Nova pesquisa
+    show:
+      title: Detalhes da pesquisa
+    retrieve_papers:
+      upload_files: Enviar arquivos
+      retrieved_papers: Artigos recuperados
+      files_empty_table: Nenhum arquivo foi enviado ainda.
+      filename: Nome do arquivo
+      size: Tamanho
+      mime_type: Tipo MIME
+    annotate_papers:
+      annotations: Anotações
+      all_papers: Todos
+      only_annotated_papers: Com anotações
+      only_unannotated_papers: Sem anotações
+      no_papers_msg: Sem artigos
+      paste_abs_translated: Colar resumo traduzido
+      reject: Rejeitar
+      
+    annotations_reports:
+      annotations_category_list: Lista de categorias de anotações
+      settings: Configurações
+      reports: Relatórios
+      keywords: Palavras-chave
+      references: Referências
+    edit:
+      title: Editando pesquisa
+    create:
+      success: Pesquisa criada com sucesso.
+    destroy:
+      success: Pesquisa removida com sucesso.
+    update:
+      success: Pesquisa atualizada com sucesso.
+
+  file_resources:
+    create: 
+      success: O arquivo foi enviado com sucesso.
+    destroy:
+      success: O arquivo foi excluído com sucesso.
+    import:
+      success: O arquivo foi importado com sucesso.
+      error: Não foi possível importar o arquivo.
+  annotations:
+    create:
+      success: Anotação criada com sucesso.
+    reject:
+      success: Artigo rejeitado com sucesso.
+    destroy:
+      success: Anotação removida com sucesso.
+  welcome:
+    index:
+      welcome_title: Bem vindo(a) ao SOTA.
+      welcome_description: Escreva textos ciêntíficos de forma <strong>ágil</strong> e <strong>organizada</strong>.
+
+  papers:
+    remove_all:
+      success: 'Todos os artigos foram excluídos com sucesso.'
+
+
+
+  activerecord:
+    models:
+      research: Pesquisa
+      annotation: anotação
+      file_resource:
+        one: Arquivo de importação
+        other: Arquivos de importação
+    attributes:
+      research:
+        description: Descrição
+        created_at: Criado em
+      paper:
+        id: ID
+        title: Título
+        abstract: Resumo
+        keywords: Palavras-chave
+        authors: Autores
+        source: Fonte
+        publication_year: Ano de publicação
+        type: Tipo
+        journal: Jornal
+      file_resource:
+        created_at: Criado em
+      annotation:
+        category_name: Categoria
