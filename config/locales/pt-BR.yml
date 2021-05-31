@@ -32,7 +32,9 @@ pt-BR:
     tables:
       actions: Ações
 
-  navbar:
+  header:
+    login: Entrar
+    sign_in: Cadastrar
     search: Procurar
     items:
       home: Principal
