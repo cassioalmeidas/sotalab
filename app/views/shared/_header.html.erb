@@ -16,8 +16,11 @@
       </form>
 
       <div class="text-end">
-        <%= link_to t('header.login', default: 'Login'), root_url, class: "btn btn-outline-light me-2" %>
-        <%= link_to t('header.sign_in', default: 'Sign in'), root_url, class: "btn btn-warning" %>
+        <%= link_to t('header.login', default: 'Login'), new_user_session_url, class: "btn btn-outline-light me-2" %>
+        <%= link_to t('header.sign_in', default: 'Sign in'), new_user_registration_url, class: "btn btn-warning" %>
+        <% if current_user %>
+          <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
+        <% end %>
       </div>
     </div>
   </div>

@@ -60,6 +60,14 @@ pt-BR:
       cancel: 'Cancelar'
       commit: 'Sim, tenho!'
 
+  users:
+    sign_in:
+      title: Por favor, entre
+      email: Endereço de email
+      password: Senha
+      remember_me: Lembrar-me
+      signin: Entrar
+
 
   researches:
     index:
@@ -133,6 +141,10 @@ pt-BR:
         one: Arquivo de importação
         other: Arquivos de importação
     attributes:
+      user:
+        email: 'E-mail'
+        password: 'Senha'
+        remember_me: 'Lembrar-me'
       research:
         description: Descrição
         created_at: Criado em
