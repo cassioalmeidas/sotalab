@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
 
 <head>
     <title>Sota</title>
@@ -11,10 +11,13 @@
 </head>
 
 <body>
+    <%= render 'shared/flash' %>
     <%= render 'shared/logo' %>
     <%= render 'shared/header' %>  
     <main role="main" class="container">
-        <%= yield %>
+    <div class="px-4 py-5 my-5">
+      <%= yield %>
+    </div>
     </main>
 </body>
 

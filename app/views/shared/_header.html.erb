@@ -8,7 +8,7 @@
       <% end %>
 
       <%= nav_bar do %>
-        <%= nav_link t('header.home', default: 'Home'), root_url %>
+        <%= nav_link Project.model_name.human(count: 2), projects_path %>
       <% end %>
 
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

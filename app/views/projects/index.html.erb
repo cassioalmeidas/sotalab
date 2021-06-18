@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-header">
+    <h1 class="card-title"><%= Project.model_name.human(count: 2) %></h1>
+  </div>
+  <div class="card-body">
+    <div class="float-end">
+      <%= link_to new_project_path, class: 'btn btn-success' do %>
+        <%= fa_icon 'plus', text: t('.new') %>
+      <% end %>
+    </div>
+
+	    <table class="table table-striped nowrap" id="projects-datatable" data-root-url="<%= root_path %>" data-source="<%= projects_path(format: :json)%>">
+	      <thead>
+	        <tr>
+	          <th data-data="id"><%= Project.human_attribute_name('id') %></th>
+	          <th data-data="name"><%= Project.human_attribute_name('name') %></th>
+            <th data-data="created_ar"><%= Project.human_attribute_name('created_at') %></th>
+	          <th data-data="dt_actions"><%= t('actions') %></th>
+	        </tr>
+	      </thead>
+		    <tbody>
+		    </tbody>
+        <tfoot>
+          <tr>
+            <th data-data="id"><%= Project.human_attribute_name('id') %></th>
+	          <th data-data="name"><%= Project.human_attribute_name('name') %></th>
+            <th data-data="created_ar"><%= Project.human_attribute_name('created_at') %></th>
+	          <th data-data="dt_actions"><%= t('actions') %></th>
+          </tr>
+        </tfoot>
+	  	</table>
+	  </div>
+
+</div>

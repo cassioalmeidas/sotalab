@@ -13,4 +13,11 @@ module ApplicationHelper
       end
     end
   end
+  
+
+  def dataConfirm
+    {
+      confirm_swal: I18n.t('are_you_sure')
+    }
+  end
 end

@@ -27,6 +27,13 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'devise-i18n'
+gem 'i18n-js'
+gem 'rails-i18n', '~> 6.0.0'
+gem 'simple_form'
+gem 'ajax-datatables-rails'
+gem 'draper'
+gem 'font-awesome-rails'
+gem 'flag-icons-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
