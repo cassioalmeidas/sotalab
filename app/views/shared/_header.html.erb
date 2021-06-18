@@ -12,12 +12,12 @@
       <% end %>
 
       <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-        <input type="search" class="form-control form-control-dark" placeholder="<%= t('header.search', default: 'Search') %>" aria-label="Search">
+        <input type="search" class="form-control form-control-dark" placeholder="<%= t('search') %>" aria-label="<%= t('search') %>">
       </form>
 
       <div class="text-end">
-        <%= link_to t('header.login', default: 'Login'), new_user_session_url, class: "btn btn-outline-light me-2" %>
-        <%= link_to t('header.sign_in', default: 'Sign in'), new_user_registration_url, class: "btn btn-warning" %>
+        <%= link_to t('login'), new_user_session_url, class: "btn btn-outline-light me-2" %>
+        <%= link_to t('signin'), new_user_registration_url, class: "btn btn-warning" %>
         <% if current_user %>
           <%= link_to "Sair", destroy_user_session_path, :method => :delete %>
         <% end %>

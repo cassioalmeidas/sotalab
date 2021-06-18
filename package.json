@@ -1,5 +1,5 @@
 {
-  "name": "sota",
+  "name": "sotalab",
   "private": true,
   "dependencies": {
     "@popperjs/core": "^2.9.2",
