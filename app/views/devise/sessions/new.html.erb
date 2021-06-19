@@ -1,7 +1,5 @@
-<div class="px-4 py-5 my-5">
-  <div class="form-auth">
+<div class="px-4 py-5 my-5 form-auth">
     <h2><%= t('.sign_in') %></h2>
-
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-floating">
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: " " %>
@@ -24,5 +22,4 @@
     <div class="my-4">
       <%= render "devise/shared/links" %>
     </div>
-  </div>
 </div>

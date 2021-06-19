@@ -13,7 +13,9 @@
 <body>
     <%= render 'shared/flash' %>
     <%= render 'shared/logo' %>
-    <%= render 'shared/header' %>  
+    <% if current_user %>
+      <%= render 'shared/header' %>
+    <% end %>
     <main role="main" class="container">
     <div class="px-4 py-5 my-5">
       <%= yield %>

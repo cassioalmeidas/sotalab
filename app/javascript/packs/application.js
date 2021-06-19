@@ -9,7 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "jquery"
 import "sweet_alert_confirm"
-import "bootstrap"
+import "bootstrap/dist/js/bootstrap.bundle"
 import "datatable"
 
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');

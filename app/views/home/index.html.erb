@@ -8,9 +8,11 @@
         Agilize sua produção ciêntifica usando ferramentas que automatizam todo
         o processo de produção de um artigo ciêntífico, dissertação, tese ou monografia.
       </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Registre-se</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Entre</button>
-      </div>
+      <% if !current_user %>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <%= link_to t('register'), new_user_registration_url, class: "btn btn-primary btn-lg px-4 gap-3" %>
+          <%= link_to t('login'), new_user_session_url, class: "btn btn-outline-secondary btn-lg px-4" %>
+        </div>
+      <% end %>
     </div>
   </div>

@@ -7,10 +7,14 @@ pt-BR:
   explore: Explorar
   remove: Remover
   edit: Editar
+  back: Voltar
   search: Procurar
   login: Entrar
-  signin: Registrar
- 
+  register: Registrar
+  my_account: Minha conta
+  logout: Sair
+  preferences: Preferências
+
   languages:
     selector:
       pt-BR: Português
