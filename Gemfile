@@ -34,6 +34,8 @@ gem 'ajax-datatables-rails'
 gem 'draper'
 gem 'font-awesome-rails'
 gem 'flag-icons-rails'
+gem 'breadcrumbs_on_rails'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

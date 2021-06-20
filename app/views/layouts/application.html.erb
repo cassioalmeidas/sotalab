@@ -17,7 +17,8 @@
       <%= render 'shared/header' %>
     <% end %>
     <main role="main" class="container">
-    <div class="px-4 py-5 my-5">
+    <div class="px-3 py-3 my-4">
+      <%= render_breadcrumbs builder: ::Bootstrap5BreadcrumbsBuilder %>
       <%= yield %>
     </div>
     </main>

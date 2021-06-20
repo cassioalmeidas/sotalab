@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: %i[ show edit update destroy ]
 
+  add_breadcrumb proc { I18n.t('home') }, :root_path 
+  add_breadcrumb proc { Project.model_name.human(count: 2) }, :projects_path 
   # GET /projects or /projects.json
   def index
     @projects = Project.all
@@ -12,16 +14,19 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1 or /projects/1.json
   def show
+    add_breadcrumb proc { @project.name }, project_path(@project) 
   end
 
   # GET /projects/new
   def new
+    add_breadcrumb proc { t('.title') }, new_project_path(@project) 
     @project = Project.new
     @project.user = current_user
   end
 
   # GET /projects/1/edit
   def edit
+    add_breadcrumb proc { t('.title') }, edit_project_path(@project) 
   end
 
   # POST /projects or /projects.json
