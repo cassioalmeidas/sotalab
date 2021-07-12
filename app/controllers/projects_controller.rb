@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   add_breadcrumb proc { Project.model_name.human(count: 2) }, :projects_path 
   # GET /projects or /projects.json
   def index
-    @projects = Project.all
+    @projects = current_user.projects.all
     respond_to do |format|
       format.html
       format.json { render json: ProjectDatatable.new(params) }
