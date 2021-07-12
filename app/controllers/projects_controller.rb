@@ -21,7 +21,6 @@ class ProjectsController < ApplicationController
   def new
     add_breadcrumb proc { t('.title') }, new_project_path(@project) 
     @project = Project.new
-    @project.user = current_user
   end
 
   # GET /projects/1/edit
@@ -32,7 +31,7 @@ class ProjectsController < ApplicationController
   # POST /projects or /projects.json
   def create
     @project = Project.new(project_params)
-
+    @project.user = current_user
     respond_to do |format|
       if @project.save
         format.html { redirect_to projects_url, notice: t('.success') }
