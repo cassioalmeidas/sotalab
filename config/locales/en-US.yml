@@ -1,4 +1,50 @@
-en-US:
+pt-BR:
+  are_you_sure: "Are you sure?"
+  cannot_undo: "You cannot undo it!"
+  actions: Actions
+  confirm: Confirm
+  cancel: Cancel 
+  explore: Explorer
+  remove: Remove
+  edit: Edit
+  back: Back
+  search: Search
+  login: Login
+  register: Register
+  my_account: My account
+  logout: Logout
+  preferences: Preferences
+  home: Home
   pt-BR: Portuguese (BR)
   en-US: English (US)
-  home: Home
+
+  projects:
+    index:
+      new: New project
+    new:
+      title: New project
+    edit:
+      title: Edit project
+    create:
+      success: Successfully created project
+    update:
+      success: Successfully updated project
+    destroy:
+      success: Successfully destroyed project
+
+  activerecord:
+    models:
+      project:
+        one: Project
+        other: Projects
+    attributes:
+      user:
+        email: 'Email'
+        password: 'Password'
+        remember_me: 'Remember-me'
+      project:
+        name: Name
+        description: Description
+        created_at: Created at
+        user_id: User ID
+     

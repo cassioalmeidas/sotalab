@@ -37,10 +37,6 @@ pt-BR:
       project:
         one: Projeto
         other: Projetos
-      annotation: anotação
-      file_resource:
-        one: Arquivo de importação
-        other: Arquivos de importação
     attributes:
       user:
         email: 'E-mail'
@@ -51,17 +47,3 @@ pt-BR:
         description: Descrição
         created_at: Criado em
         user_id: ID do usuário
-      paper:
-        id: ID
-        title: Título
-        abstract: Resumo
-        keywords: Palavras-chave
-        authors: Autores
-        source: Fonte
-        publication_year: Ano de publicação
-        type: Tipo
-        journal: Jornal
-      file_resource:
-        created_at: Criado em
-      annotation:
-        category_name: Categoria
