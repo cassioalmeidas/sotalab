@@ -25,9 +25,7 @@ $(document).on('turbolinks:load', function() {
     ],
     ajax: $('#projects-datatable').data('source'),
     pagingType: 'full_numbers',
-    language:{
-      url: window.location.origin + '/datatable_i18n'
-    },
+    language: I18n.t('datatables'),
     columns: [
       { data: 'id' },
       { data: 'name' },
