@@ -15,11 +15,8 @@ pt-BR:
   logout: Sair
   preferences: Preferências
   home: Principal
-
-  languages:
-    selector:
-      pt-BR: Português
-      en: Inglês
+  pt-BR: Português (BR)
+  en-US: Inglês (US)
 
   projects:
     index:

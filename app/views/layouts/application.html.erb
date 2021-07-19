@@ -13,9 +13,7 @@
 <body>
     <%= render 'shared/flash' %>
     <%= render 'shared/logo' %>
-    <% if current_user %>
-      <%= render 'shared/header' %>
-    <% end %>
+    <%= render 'shared/header' %>
     <main role="main" class="container">
     <div class="px-3 py-3 my-4">
       <%= render_breadcrumbs builder: ::Bootstrap5BreadcrumbsBuilder %>
